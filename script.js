@@ -31,7 +31,7 @@ const slideImage = () =>{
         }
     )
 }
-setInterval(goNext, 10000);
+setInterval(goNext, 4000);
 
 function textFetch(index){
     let t = "";
