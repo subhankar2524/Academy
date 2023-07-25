@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Pacifico&family=Playfair+Display:wght@400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+.wrapper{
+    position: relative;
+    color: #FFFFFF;
+    background-image: url("https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhY3R8ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+    background-size: cover;
+    overflow: hidden;
+    font-size: 70px;
+    font-family: 'Pacifico', cursive;
+    padding: 5%;
+    height: 70vh;
+}
+#headerText{
+    font-size: 70px;
+    /* border: 1px solid red; */
+    width: 50%;
+}
+.header{
+    height: 10vh;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    /* border: 2px dashed black; */
+    display: flex;
+    width: 25%;
+    justify-content:space-between;
+    align-items: center;
+}
+.header button{
+    position: relative;
+    height:8vh;
+    font-family: cabin;
+    color: #fff;
+    background-color: transparent;
+    transition:top 1s;
+    border: none;
+    cursor: pointer;
+}
+.header button:hover{
+    top: -2px;
+}
+#header_logo{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+    opacity: 0.2;
+    transition: 0.5s;
+}
+#header_logo:hover{
+    opacity: 1;    
+}
+.custom-shape-divider-bottom-1690267373 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1690267373 svg {
+    position: relative;
+    display: block;
+    width: calc(109% + 1.3px);
+    height: 233px;
+}
+
+.custom-shape-divider-bottom-1690267373 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+footer{
+    color: white;
+    background-image: url(/images/new_wave_878.3003931280591.svg);
+    background-size: cover;
+    background-position: 10% 70%;
+    height: 30vh;
+    display: flex;
+    padding-top: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+footer div{
+    /* border: 2px solid red; */
+    margin: 10px;
+
+}
+footer img{ 
+    width: 10vh;
+}
+footer button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+footer button img{
+    height: 20px;
+    width: 20px;
+}
+.carousel{
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    position: relative;
+    /* right: -15%; */
+    /* border: 2px solid red; */
+    /* border-radius: 15px; */
+    overflow: hidden;
+}
+.slide{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    position: absolute;
+    transition: 1s;
+}
+.carousel_wrapper{
+    /* border: 2px dashed green; */
+    display: flex;
+    justify-content:left;
+    flex-direction: row;
+    align-items: top;
+    margin: 5%;
+}
+.nav{
+    position: relative;
+    /* border: 2px solid blue; */
+    height: 100%;
+    width: 100%;
+}
+.nav button{
+    color: #262626;
+    border: none;
+    position: relative;
+    height: 100%;
+    width: 49%;
+    background-color: transparent;
+}
+#carousel_text{
+    font-family: 'Cabin', sans-serif; 
+    font-size: 30px;
+    color: #262626;
+    font-weight: 600;
+    /* border: 2px solid red; */
+    width: 45%;
+    text-align: right;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.about{
+    width: 40%;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    padding: 20px;
+    text-align: justify;
+}
+.people{
+    width: 40%;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    position: relative;
+    left: 50%;
+    padding: 20px;
+    text-align: justify;
+}
+
+#sw-js-blob-svg{
+    z-index: -1;
+    position: absolute;
+    top: 100vh;
+    left:-20%;
+    width: 50%;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .wrapper{
+        height: 50vh;
+    }
+    .custom-shape-divider-bottom-1690267373 svg {
+        width: calc(191% + 1.3px);
+        height: 233px;
+    }
+    .about{
+        width: 90%;
+        font-size: medium;
+    }.people{
+        width: 90%;
+        left: 0;
+        font-size: medium;
+    }
+    #headerText{
+        position: relative;
+        top: 30%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    footer div{
+        font-size: small;
+    }   
+    #sw-js-blob-svg{
+        top: 60vh;
+        left:-20%;
+        width: 70%;
+    }
+    #carousel_text{
+        font-size: medium;
+    }
+    .carousel{
+        height: 15vh;
+    }
+    .header{
+        width: 40%;
+    }
+    footer img{
+        height: auto;
+        width: 30px;
+    }
+    footer{
+        height: 50%;
+    }
+}
