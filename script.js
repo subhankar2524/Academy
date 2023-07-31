@@ -31,7 +31,8 @@ const slideImage = () =>{
         }
     )
 }
-setInterval(goNext, 4000);
+
+setInterval(goNext, 10000);
 
 function textFetch(index){
     let t = "";
@@ -57,4 +58,43 @@ function textFetch(index){
         carouselText.innerHTML = t;
         carouselText.style.opacity = 1;
     }, 500);
+}
+
+// review 
+const comments = document.querySelectorAll(".review_sec");
+
+var count = 0;
+console.log(comments)
+
+ 
+if(screen.width>767){
+    comments.forEach(
+        (comments, index) =>{       
+            comments.style.left = `${index*42}vh`
+        }
+    )    
+}else{
+    comments.forEach(
+        (comments, index) =>{       
+            comments.style.left = `${index*75}%`
+        }
+    )
+}
+
+const revPrev = () => {
+    if(count>0)
+    count--;
+    slideRev();
+}
+const revNext = () => {    
+    count++;
+    slideRev();
+}
+const slideRev = () =>{
+    comments.forEach(
+        (cmt) => {
+            cmt.style.transform = `translate(-${count*20}vh)`;
+            console.log("running inside")
+        }
+    )
 }
