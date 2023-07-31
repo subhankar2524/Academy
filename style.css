@@ -53,9 +53,9 @@ body{
     font-family: 'Pacifico', cursive;
     font-size: calc(.5em + 8vw);
 }
-.top-flex div{
-    /* border: 2px dashed black; */
-}
+/* .top-flex div{
+    border: 2px dashed black;
+} */
 .custom-shape-divider-bottom-1690483487 {
     position: relative;
     bottom: -2px;
@@ -75,36 +75,6 @@ body{
     fill: #FFFFFF;
 }
 
-
-footer{
-    color: white;
-    background-image: url("footerImg.png");
-    background-size: cover;
-    background-position: 10% 70%;
-    height: 30vh;
-    display: flex;
-    padding-top: 3vh;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: space-between;
-}
-footer div{
-    /* border: 2px solid red; */
-    margin: 10px;
-
-}
-footer img{ 
-    width: 10vh;
-}
-footer button{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-}
-footer button img{
-    height: 20px;
-    width: 20px;
-}
 .carousel{
     width: 50%;
     height: 25vw;
@@ -157,14 +127,72 @@ footer button img{
     font-size: calc(.5em + 3vw);
 }
 
-/* .about{
+.howWeHelp{
+   /* border: 2px solid blue; */
+   /* padding: 2vw; */
+   font-size: 22px;
+   background-image: url("https://images.unsplash.com/photo-1614105365930-0dbf4d717865?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1063&q=80");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   font-family: 'Cabin', sans-serif;
+   color: white;
+}
+.howWeHelpBtn{
+    /* border: 1px dashed black; */
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50%;
+    background-color: rgba(16, 29, 183, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(.2em + 2vw);
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 4px;
+}
+.howWeHelpBtn:hover{
+    background-color:  rgba(16, 29, 183, 0.7);
+}
+.howWeHelp section{
+    /* border: 1px solid rgba(0,0,0,0.5); */
+    background-color: rgba(0,0,0,0.5);
+    padding: 2vw 10vw 6vw 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+.howWeHelp #transpBg{
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+}
+.howWeHelp #p1{
+    background-color: rgba(0,0,0,0.5);
+    padding: 2vh;
+    color: transparent;
+}
+.howWeHelp h3{
+    font-size: calc(.2em + 2vw);
+}
+
+.events{
+    background-color:aliceblue;
+    padding: 10vh;
+    display: flex;
+    justify-content: center;
+    font-family: 'Cabin', sans-serif;
+}
+.events div{
+    /* border: 1px solid red; */
     width: 40%;
-    border: 1px dashed black;
-    font-family: 'Playfair Display', serif;
-    top: -200px;
-    left: 2%;
-    text-align: justify;
-} */
+    padding: 0vw 4vw 0vw 0vw;
+}
+.events #sec1{
+        text-align: right;
+        width: 20%;
+}
+
 .about{
     /* border: 1px dashed black; */
     width: 50%;
@@ -174,6 +202,56 @@ footer button img{
     left: 2%;
     text-align: justify;
 }
+
+.reviews{
+    /* background-color: rgba(0,100,255,0.1); */
+    /* border: 2px solid red; */
+    padding: 2%;
+    height: 34vh;
+    font-family: 'Cabin', sans-serif;
+    overflow:auto;
+}
+.review_sec{
+    width:35vh;
+    /* border: 2px solid black; */
+    padding: 2vh;
+    height: 27vh;
+    border-radius: 5%;
+    margin-left: 20px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+    position: absolute;
+    transition: 0.5s;
+}
+#review_header{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+#review_comment{
+    padding: 2vh;
+    text-align:justify;
+}
+.review_sec img{
+    width: 20%;
+    border-radius: 50%;
+}
+
+.buttonRev{
+    /* width: 99%; */
+    /* border: 2px solid red; */
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+}
+.buttonRev button{
+    font-family: 'Cabin', sans-serif;
+    padding: 2vh;
+    border: none;
+    border-radius: 8px;
+    /* background-color: rgba(0,100,255,0.1); */
+    cursor: pointer;
+}
+
 .people{
     /* border: 1px dashed black; */
     width: 50%;
@@ -185,6 +263,35 @@ footer button img{
 }
 
 
+footer{
+    color: white;
+    background-image: url("footerImg.png");
+    background-size: cover;
+    background-position: 10% 70%;
+    height: 30vh;
+    display: flex;
+    padding-top: 3vh;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+footer div{
+    /* border: 2px solid red; */
+    margin: 10px;
+
+}
+footer img{ 
+    width: 10vh;
+}
+footer button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+footer button img{
+    height: 20px;
+    width: 20px;
+}
 /** For mobile devices **/
 @media (max-width: 767px) {
     #about_text{
@@ -199,8 +306,8 @@ footer button img{
         align-items: center;
     }
     .carousel{
-        width: 95%;
-        height: 45vw;
+        width: 85%;
+        height: 50vw;
     }
     #carousel_text{
         width: 95%;
@@ -215,6 +322,7 @@ footer button img{
         left: 5%;
         font-size: medium;
     }
+
     #headerText{
         position: relative;
         top: 30%;
@@ -224,6 +332,36 @@ footer button img{
         align-items: center;
         justify-content: center;
     }
+    .reviews{
+        height: 25vh;
+    }
+.review_sec{
+    width: 60%;
+    height:20vh;
+}
+    .events{
+        display: flex;
+        flex-direction: column;
+    }
+    .events #sec1{
+        width: 60%;
+        padding-bottom: 2vh;
+        text-align: center;
+    }
+    .events #sec2{
+        width: 60%;
+        text-align: center;
+    }
+    .howWeHelp section{
+        padding: 2vw 17vw 6vw 17vw;
+    }
+    .howWeHelp #p2{
+        display: none;
+    }
+    .howWeHelp #p1{
+        color: white;
+    }
+
     footer div{
         font-size: small;
     }   
