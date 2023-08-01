@@ -67,19 +67,12 @@ var count = 0;
 console.log(comments)
 
  
-if(screen.width>767){
-    comments.forEach(
-        (comments, index) =>{       
-            comments.style.left = `${index*42}vh`
-        }
-    )    
-}else{
-    comments.forEach(
-        (comments, index) =>{       
-            comments.style.left = `${index*75}%`
-        }
-    )
-}
+comments.forEach(
+    (comments, index) =>{       
+        comments.style.left = `${index*115}%`
+    }
+)    
+
 
 const revPrev = () => {
     if(count>0)
@@ -93,7 +86,7 @@ const revNext = () => {
 const slideRev = () =>{
     comments.forEach(
         (cmt) => {
-            cmt.style.transform = `translate(-${count*20}vh)`;
+            cmt.style.transform = `translate(-${count*104.7}%)`;
             console.log("running inside")
         }
     )
