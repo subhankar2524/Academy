@@ -205,11 +205,14 @@ body{
 
 #reviewWrapper{
     width: 100%;
-    /* border: 2px dashed blue; */
-    overflow: hidden;
+    /* border: 1px dashed blue; */
+    overflow: scroll;
     padding-bottom: 8vh;
     padding-top: 6vh;
 }
+#reviewWrapper::-webkit-scrollbar{
+    display: none;
+  }
 .reviews{
     /* background-color: rgba(0,100,255,0.1); */
     /* border: 2px solid red; */
