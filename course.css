@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Pacifico&family=Playfair+Display:wght@400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+button{
+    cursor: pointer;
+}
+#coursesHeader{
+    height: 60vh;
+    background-color: rgba(151, 211, 190, 0.5);
+    /* background-image: url("https://images.unsplash.com/photo-1440342359743-84fcb8c21f21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"); */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    font-size: 34px;
+    color: #262626;
+    /* color: aliceblue; */
+    /* text-shadow: 2px 2px 5px black; */
+}
+#coursesHeader input{
+    border: none;
+    height: 30px;
+    width: 80%;
+    border-radius: 10px 0px 0px 10px;
+}
+#searchbox{
+    /* border: 2px solid blue; */
+    width: 50%;
+    margin: 2%;
+}
+#searchbox button{
+    width: 20%;
+    height: 30px;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+}
+.catalog{
+    width: 90%;
+    /* border: 2px solid red; */
+    padding: 5%;
+}
+.course{
+    /* height: 20vw; */
+    width: 16vw;
+    border-radius: 15px;
+    background-color: rgba(151, 211, 190, 0.5);
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+.courseName{
+    padding: 5%;
+    font-weight: 600;
+}
+.description{
+    padding: 5%;
+    font-size: small;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.buyCourse{
+    display: flex;
+    justify-content: right;
+    padding: 5%;
+}
+.buyCourse button{
+    border: none;
+    padding: 4% 10% 4% 10%;
+    border-radius: 4px;
+}
