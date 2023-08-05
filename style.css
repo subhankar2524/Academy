@@ -296,6 +296,7 @@ body{
     width: 50%;
     height: auto;
     padding: 0;
+    padding-right: 2%;
     overflow: scroll;
     /* border: 2px solid red; */
 }
