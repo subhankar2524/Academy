@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Pacifico&family=Playfair+Display:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cabin&family=Pacifico&family=Playfair+Display:wght@400;800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -22,7 +22,7 @@ body{
     background-color: transparent;
     /* border: 2px dashed black; */
     display: flex;
-    width: 25%;
+    width: 40%;
     justify-content:space-between;
     align-items: center;
 }
@@ -32,9 +32,10 @@ body{
     font-family: cabin;
     color: #fff;
     background-color: transparent;
-    transition:top 1s;
+    transition:top 0.1s;
     border: none;
     cursor: pointer;
+    top: 0;
 }
 .header button:hover{
     top: -2px;
@@ -307,7 +308,6 @@ body{
     max-width: 150px;
     margin: 2%;
 }
-
 footer{
     color: white;
     background-image: url("footerImg.png");
@@ -429,6 +429,12 @@ footer button img{
     .people div{
         width: 100%;
         height: 50%;
+    }
+    .reviews{
+        margin-bottom: 7vh;
+    }
+    .buttonRev{
+        display: none;
     }
     footer div{
         font-size: small;
