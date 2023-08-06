@@ -1,19 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Cabin&family=Pacifico&family=Playfair+Display:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Cabin&family=Pacifico&family=Playfair+Display:wght@400;800&family=REM:wght@900&family=Raleway:wght@600&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    /* overflow-x: hidden; */
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 /* font-family: 'Pacifico', cursive; */
 
-#headerText{
-    font-size: 70px;
-    /* border: 2px dashed red; */
-    /* width: 50%; */
-}
 .header{
     position: absolute;
     top: 0%;
@@ -44,18 +40,37 @@ body{
 .top-flex{
     /* border: 2px solid red; */
     /* height: 500px; */
-    background-image: url("https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhY3R8ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+    background-image: url("home_background.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    color: white;
-    font-family: 'Pacifico', cursive;
-    font-size: calc(.5em + 8vw);
 }
 /* .top-flex div{
     border: 2px dashed black;
+} */
+#about_text{
+    /* border: 2px solid red; */
+    color: white;
+    font-family: 'Borel', cursive;
+    /* font-family: 'Pacifico', cursive; */
+    font-family: 'Raleway', sans-serif;
+    font-size: calc(.2em + 5vw);
+    /* padding: 5%; */
+    padding-top: 8%;
+    padding-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    position: relative;
+    right: -25%;
+    /* text-shadow: 3px 3px 10px rgba(100, 197, 197, 0.7); */
+}
+/* #about_text p{
+    position: relative;
+    top: -6.7vw;
+    right: 6vw;
 } */
 .custom-shape-divider-bottom-1690483487 {
     position: relative;
@@ -73,7 +88,7 @@ body{
     height: calc(1.2em + 8vw);
 }
 .custom-shape-divider-bottom-1690483487 .shape-fill {
-    fill: #FFFFFF;
+    fill: white;
 }
 
 .carousel{
@@ -141,14 +156,14 @@ body{
 }
 .howWeHelpBtn{
     /* border: 1px dashed black; */
-    height: 20vw;
-    width: 20vw;
+    height: 15vw;
+    width: 15vw;
     border-radius: 50%;
     background-color: rgba(16, 29, 183, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: calc(.2em + 2vw);
+    font-size: calc(.2em + 1.5vw);
     cursor: pointer;
     transition: 0.3s;
     padding: 4px;
@@ -213,7 +228,7 @@ body{
 }
 #reviewWrapper::-webkit-scrollbar{
     display: none;
-  }
+}
 .reviews{
     /* background-color: rgba(0,100,255,0.1); */
     /* border: 2px solid red; */
@@ -282,21 +297,20 @@ body{
     width: 0 !important
 }
 .people section{
-    width: 50%;
+    width: 45%;
     max-height: 40vh;
     height: 100%;
     /* border: 2px solid blue; */
     overflow-y: scroll;
+    padding-left: 10%;
 }
 .people section p{
     display: flex;
     align-items: center;
 }
 .people div{
-    width: 50%;
+    width: 40%;
     height: auto;
-    padding: 0;
-    padding-right: 2%;
     overflow: scroll;
     /* border: 2px solid red; */
 }
@@ -311,7 +325,8 @@ body{
 }
 footer{
     color: white;
-    background-image: url("footerImg.png");
+    background-image: url("footerImg2.jpg");
+    /* background-image: url("https://images.wallpapersden.com/image/download/minimalistic-dark-hills-blue_bWltamuUmZqaraWkpJRobWllrWdma2U.jpg"); */
     background-size: cover;
     background-position: 10% 70%;
     height: 30vh;
@@ -324,7 +339,8 @@ footer{
 footer div{
     /* border: 2px solid red; */
     margin: 10px;
-
+    color: white;
+    text-shadow: 0px 0px 25px black;
 }
 footer img{ 
     width: 10vh;
@@ -344,6 +360,13 @@ footer button img{
         font-size: calc(.5em + 8vw);
         padding-top: 10%;
         padding-bottom: 15%;
+        right: 0%;
+        background-color: rgba(0,0,0,0.5);
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 0px 50px rgba(0,0,0,1);
+        align-items: center;
+        /* text-shadow: 10px 10px 20px black; */
     }
     /* carousel */
     .carousel_wrapper{
@@ -426,6 +449,7 @@ footer button img{
     .people section{
         width: 100%;
         height: 50%;
+        padding-left: 0;
     }
     .people div{
         width: 100%;
