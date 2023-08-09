@@ -7,7 +7,7 @@
     <title>Academy</title>
 </head>
 <body>
-
+    
 <div class="top-flex">
     <!-- header -->
     <div style="height: 10vh;">
@@ -21,8 +21,9 @@
     </div>
     <!-- header end -->
     <div id="about_text">
-        PowerMyCode
-        <p style="font-size: calc(.2em + 1vw);font-family: 'Cabin', sans-serif;">lets learn together</p>
+        PowerMyCode 
+        <p id="typing"></p>
+        <div id="cursor">|</div>
     </div>
     <div class="custom-shape-divider-bottom-1690483487">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -36,92 +37,131 @@
     font-family: 'Playfair Display', serif; -->
 
     <!-- carousel -->
-    <br>
-    <br>
-    <div class="carousel_wrapper">
-        <div id="carousel_text">
-            <!-- Course1 -->
-        </div>
-       <main class="carousel">
-            <img src="course3.jpg" class="slide" alt="">
-            <img src="course2.jpg" class="slide" alt="">
-            <img src="course1.jpg" class="slide" alt="">
-            <img src="course4.jpg" class="slide" alt="">
-            <div class="nav">
-                <button onclick="goPrev()">
-                     
-                </button>
-                <button onclick="goNext()">
-                   
-                </button>
-            </div>
-        </main>
+
+<div class="welcome">
+    Welcome to PowerMyCode - Unleash the Potential of Web Development!
+    At PowerMyCode, we empower web developers with cutting-edge tools and resources to supercharge their coding journey.
+    Elevate your code, amplify your skills, and embark on a path of limitless possibilities with PowerMyCode.
+</div>
+
+<div class="carousel_wrapper">
+    <div id="carousel_text">
+        <!-- Course1 -->
     </div>
+   <main class="carousel">
+        <img src="course3.jpg" class="slide" alt="">
+        <img src="course2.jpg" class="slide" alt="">
+        <img src="course1.jpg" class="slide" alt="">
+        <img src="course4.jpg" class="slide" alt="">
+        <div class="nav">
+            <button onclick="goPrev()">
+                 
+            </button>
+            <button onclick="goNext()">
+               
+            </button>
+        </div>
+    </main>
+</div>
     <!-- end carousel -->
 
-    <div class="howWeHelp">
-        <h3 id="p1">What we Provide</h3>
-        <section>
-        <h3 id="p2">What we Provide</h3>
-            <div class="howWeHelpBtn" id="btn1">Client Solution</div>
-            <div class="howWeHelpBtn" id="btn2">Job opportunities</div>
-        </section>
-    </div>
+<div class="howWeHelp">
+    <h3 id="p1">What we Provide</h3>
+    <section>
+    <h3 id="p2">What we Provide</h3>
+        <div class="howWeHelpBtn" id="btn1">Client Solution</div>
+        <div class="howWeHelpBtn" id="btn2">Job opportunities</div>
+    </section>
+</div>
 
 
-    <br>
-    <div class="about">
-            <h1>About us</h1><br>
-            <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>     
-            <br><br>       
-    </div>
+<br>
+<div class="about">
+        <h1>About us</h1><br>
+        <p>
+            At PowerMyCode, we are a passionate team of web development enthusiasts who believe in the transformative power of coding. Our mission is to empower developers, both aspiring and experienced, with the tools and knowledge they need to thrive in the digital landscape. <br>
+            With years of collective experience in the industry, we understand the challenges and opportunities that web developers face. That's why we've curated a comprehensive platform that offers top-notch coding resources, tutorials, and projects designed to hone your skills and unleash your full potential.
+          
+        </p>     
+        <br><br>       
+</div>
 
 
     
-    <div class="events">
-        <div id="sec1"> <h3>Upcoming events</h3>
-        <a href="http://" style="text-decoration: none;">see all event -></a>
-        </div>
-        <div id="sec2">
-            12th sept, 2023 <br>
-            <i>Live Webinar</i>
-        </div>
+<div class="events">
+    <div id="sec1"> <h3>Upcoming events</h3>
+    <a href="http://" style="text-decoration: none;">see all event -></a>
     </div>
-    <br>
+    <div id="sec2">
+        12th sept, 2023 <br>
+        <i>Live Webinar</i>
+    </div>
+</div>
+<br>
 
-
-    <div class="people">
-        <section>
-            <p><img src="https://picsum.photos/id/870/200/200?&blur=5" alt="">
-                R. Madhwan <br>
-                Designation
-            </p>
+<br>
+<br>
+<div class="people">
+    <section>
+        <!--  -->
+        <div class="member">
+            <div class="description">
+                The team is led by Arun Rachuri, an Ex-IBMer with a vision to deliver world-class websites and mobile applications for businesses globally. He has a proven track record of building clientele, including popular MNCs, and holds a Bachelor's Degree in Business Administration.
+            </div>
+            <img src="https://picsum.photos/id/238/250/300" alt="">
             
-            <p><img src="https://picsum.photos/id/871/200/200?&blur=5" alt="">
-                S. Kapoor <br>
-                Designation
-            </p>
+            
+            <div class="text">
+                Arun Ranchori <br>
+                Visonary Leader
+            </div>
+            
+        </div>
+        <!--  -->
 
-            <p><img src="https://picsum.photos/id/872/200/200?&blur=5" alt="">
-                S. Singh <br>
-                Designation
-            </p>
-
-            <p><img src="https://picsum.photos/id/873/200/200?&blur=3" alt="">
-                D. Sinha <br>
-                Designation
-            </p>
-        </section>
-        <div>
-            <h1 style="text-align: right;">People</h1><br>
-            <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nihil architecto doloribus numquam sunt aut modi, et, iure deserunt esse quos accusantium ex, in aliquid? Quia molestias libero, voluptates, facilis voluptatem, totam ex sapiente iure ea esse odit eius aperiam maxime? Veritatis voluptatum qui voluptates quia ab excepturi! Quas ratione explicabo dolorum amet ipsa adipisci esse enim praesentium hic assumenda.
-            </p>
-        </div>     
-    </div>
-
+        <div class="member">
+            <div class="description">
+                Ram Peri, another Ex-IBMer, brings expertise in B2B sales, contract executions, and project budgeting. His background, along with a Bachelor's Degree in World History, enables him to excel in sales and project management.
+            </div>
+            <img src="https://picsum.photos/id/239/250/300" alt="">
+            <div class="text">
+                Ram Peri <br>
+                Sales and Project Expert
+            </div>
+        </div>
+        <div class="member">
+            <div class="description">
+                Simran Tripathy is the HR Management Specialist overseeing the Human Resources department. With an MBA in Human Resource Management, she ensures a positive and inclusive work environment for the team.
+            </div>
+            <img src="https://picsum.photos/id/240/250/300" alt="">
+            <div class="text">
+                Simran Tripathy <br>
+                HR Management Specialist
+            </div>
+        </div>
+        <div class="member">
+            <div class="description">
+                Simran Tripathy is the HR Management Specialist overseeing the Human Resources department. With an MBA in Human Resource Management, she ensures a positive and inclusive work environment for the team.
+            </div>
+            <img src="https://picsum.photos/id/241/250/300" alt="">
+            <div class="text">
+                Arka Bakshi<br>
+                Description
+            </div>
+        </div>
+        <div class="member">
+            <div class="description">
+                Simran Tripathy is the HR Management Specialist overseeing the Human Resources department. With an MBA in Human Resource Management, she ensures a positive and inclusive work environment for the team.
+            </div>
+            <img src="https://picsum.photos/id/242/250/300" alt="">
+            <div class="text">
+                Abhishek R<br>
+                Description
+            </div>
+        </div>
+    </section>
+</div>
+<div id="people-text">The team's combined efforts drive innovation and excellence in every project, making them the strength of PowerMyCode. Their dedication, passion, and commitment to exceeding client expectations make them valuable assets to the company. The website invites visitors to learn more about the team and explore potential partnerships to create exceptional digital solutions.</div>
 <br>
 <br><br>
 <div id="reviewWrapper">
